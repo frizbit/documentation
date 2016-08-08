@@ -55,6 +55,12 @@ Google Services Wizard will enable Google Cloud Messaging and return two keys ca
 Both keys will be asked while you are creating your website by using [Frizbit Dashboard.](https://dashboard.frizbit.com) 
 
 ## Creating certificate for Safari
+The Apple Push Notification Service (APNs) is a service created by Apple Inc. way back in 2009 to securely send push notifications from third party apps to their users' Apple devices. To be able to ensure that unwanted parties are not sending notifications to your application or website, Apple requires you to create an SSL certificate to allow secure connection to their servers. Please follow steps below to create the certificate for web push notifications.
+
+1. **Create Certificate Signing request**
+2. **Create a Web Push ID**
+3. **Create a Web Push Certificate**
+
 # Installation
 ## Fully https websites
 ## Partly https websites
