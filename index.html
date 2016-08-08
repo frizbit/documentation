@@ -120,7 +120,113 @@
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id="getting-started">Getting Started</h1>
+        <h1 id="introduction">Introduction</h1>
+
+<h2 id="what-s-web-push-notifications">What’s web push notifications?</h2>
+
+<h2 id="what-can-we-do-with-web-push-notifications">What can we do with web push notifications?</h2>
+
+<h2 id="which-browsers-are-supported">Which browsers are supported?</h2>
+
+<h1 id="getting-started">Getting Started</h1>
+
+<h2 id="creating-your-account">Creating your account</h2>
+
+<h2 id="adding-your-website">Adding your website</h2>
+
+<h3 id="fully-https-websites">Fully https websites</h3>
+
+<h3 id="partly-https-websites">Partly https websites</h3>
+
+<h3 id="http-only-websites">Http only websites</h3>
+
+<h2 id="creating-google-project-for-chrome">Creating Google project for Chrome</h2>
+
+<p>Google Chrome Browser uses Google’s Cloud Messaging Service for sending push notifications. To be able to send and receive notifications to Chrome, we’ll obtain a Google Server API Key and Google Project Number. Frizbit Dashboard provides default values for your website. But if you would like to provide your own keys, please follow the instructions to obtain them.</p>
+
+<ol>
+<li><strong>Create a Google Application</strong></li>
+</ol>
+
+<p>Visit the <a href="https://developers.google.com/mobile/add?platform=android&amp;cntapi=gcm">Google Services Wizard.</a> Don’t worry about creating an “Android” application. There are no differences between sending web push notifications between Android or Google Chrome. They are using same service called Google Cloud Messaging which we will activate soon.</p>
+
+<p><img title="Creating a Google Application Step 1" src="https://raw.githubusercontent.com/frizbit/documentation/master/source/images/google-1.png" /></p>
+
+<p>You can create a new application or select an existing application from the dropdown. In the example above, we create a new application called <em>Frizbit</em>. As we are not sending push notifications to an Android application, we don’t need a package name. However, we must enter a value to continue. Please use a value that suits for your website. You can use reverse domain naming as we use in the example above.</p>
+
+<p>Click <strong>Choose and configure services</strong> to continue. Wait a minute for the project to be created.</p>
+
+<ol>
+<li><strong>Activate Google Cloud Messaging</strong></li>
+</ol>
+
+<p>After your project created, select <strong>Cloud Messaging</strong> to enable. Click <strong>Enable Google Cloud Messaging.</strong></p>
+
+<p><img title="Activating Google Cloud Messaging" src="https://raw.githubusercontent.com/frizbit/documentation/master/source/images/google-2.png" /></p>
+
+<ol>
+<li><strong>Save Your Keys</strong></li>
+</ol>
+
+<p>Google Services Wizard will enable Google Cloud Messaging and return two keys called <em>Server API Key</em> and <em>Sender ID</em>(also known as the <em>Project Number</em>).</p>
+
+<p><img title="Activating Google Cloud Messaging" src="https://raw.githubusercontent.com/frizbit/documentation/master/source/images/google-3.png" /></p>
+
+<p>Both keys will be asked while you are creating your website by using <a href="https://dashboard.frizbit.com">Frizbit Dashboard.</a> </p>
+
+<h2 id="creating-certificate-for-safari">Creating certificate for Safari</h2>
+
+<h1 id="installation">Installation</h1>
+
+<h2 id="fully-https-websites">Fully https websites</h2>
+
+<h2 id="partly-https-websites">Partly https websites</h2>
+
+<h3 id="for-your-own-https-subdomain">For your own https subdomain</h3>
+
+<h3 id="for-provided-frizbit-https-subdomain">For provided frizbit https subdomain</h3>
+
+<h2 id="http-only-website">Http only website</h2>
+
+<h2 id="how-to-install-by-using-google-tag-manager">How to install by using Google Tag Manager</h2>
+
+<h1 id="javascript-api">Javascript API</h1>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<h2 id="autoregister">Autoregister</h2>
+
+<h2 id="prompt-after">Prompt After</h2>
+
+<h2 id="customizing-notify-box">Customizing Notify Box</h2>
+
+<h2 id="checking-browser-support">Checking Browser Support</h2>
+
+<h2 id="segmentation-overview">Segmentation Overview</h2>
+
+<h2 id="assigning-segments">Assigning Segments</h2>
+
+<h2 id="removing-segments">Removing Segments</h2>
+
+<h2 id="tagging-overview">Tagging Overview</h2>
+
+<h2 id="assigning-tags">Assigning Tags</h2>
+
+<h2 id="removing-tags">Removing Tags</h2>
+
+<h1 id="rest-api">REST API</h1>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<h2 id="sending-your-first-push">Sending Your First Push</h2>
+
+<h2 id="authentication">Authentication</h2>
+
+<h2 id="specification">Specification</h2>
+
+<h2 id="basic-push">Basic Push</h2>
+
+<h1 id="getting-started">Getting Started</h1>
 
 <h2 id="introduction">Introduction</h2>
 
