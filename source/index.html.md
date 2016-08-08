@@ -17,6 +17,70 @@ includes:
 search: true
 ---
 
+# Introduction
+## What’s web push notifications?
+## What can we do with web push notifications?
+## Which browsers are supported?
+# Getting Started
+## Creating your account
+## Adding your website
+### Fully https websites
+### Partly https websites
+### Http only websites
+## Creating Google project for Chrome
+Google Chrome Browser uses Google’s Cloud Messaging Service for sending push notifications. To be able to send and receive notifications to Chrome, we’ll obtain a Google Server API Key and Google Project Number. Frizbit Dashboard provides default values for your website. But if you would like to provide your own keys, please follow the instructions to obtain them.
+
+1. **Create a Google Application**
+
+Visit the [Google Services Wizard.](https://developers.google.com/mobile/add?platform=android&cntapi=gcm) Don’t worry about creating an “Android” application. There are no differences between sending web push notifications between Android or Google Chrome. They are using same service called Google Cloud Messaging which we will activate soon.
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/google-1.png "Creating a Google Application Step 1")
+
+You can create a new application or select an existing application from the dropdown. In the example above, we create a new application called _Frizbit_. As we are not sending push notifications to an Android application, we don’t need a package name. However, we must enter a value to continue. Please use a value that suits for your website. You can use reverse domain naming as we use in the example above.
+
+Click **Choose and configure services** to continue. Wait a minute for the project to be created.
+
+2. **Activate Google Cloud Messaging**
+
+After your project created, select **Cloud Messaging** to enable. Click **Enable Google Cloud Messaging.**
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/google-2.png "Activating Google Cloud Messaging")
+
+3. **Save Your Keys**
+
+Google Services Wizard will enable Google Cloud Messaging and return two keys called _Server API Key_ and _Sender ID_(also known as the _Project Number_).
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/google-3.png "Activating Google Cloud Messaging")
+
+Both keys will be asked while you are creating your website by using [Frizbit Dashboard.](https://dashboard.frizbit.com) 
+
+## Creating certificate for Safari
+# Installation
+## Fully https websites
+## Partly https websites
+### For your own https subdomain
+### For provided frizbit https subdomain
+## Http only website
+## How to install by using Google Tag Manager
+# Javascript API
+## Getting Started
+## Autoregister
+## Prompt After
+## Customizing Notify Box
+## Checking Browser Support
+## Segmentation Overview
+## Assigning Segments
+## Removing Segments
+## Tagging Overview
+## Assigning Tags
+## Removing Tags
+# REST API
+## Getting Started
+## Sending Your First Push
+## Authentication
+## Specification
+## Basic Push
+
 # Getting Started
 ## Introduction
 
