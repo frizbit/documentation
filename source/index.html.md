@@ -113,11 +113,11 @@ Press “Download” to save your certificate.
 
 Open the .cer file you downloaded in the last step by double clicking on it in Finder.
 
-![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-10.png "Apple Certificate-1")
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-11.png "Apple Certificate-1")
 
 After a few seconds the “Keychain Access” program should pop up. Select “Login” > “Keys” then right click on your key(**Private Key**) in the list and select “Export”. 
 
-![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-11.png "Apple Certificate-2")
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-12.png "Apple Certificate-2")
 
 Give the file a unique name and press save. You will have an option to protect the file with a password. Add a password, you need to enter this same password on Frizbit Dashboard. Save the .p12 file and its password for later use.
 
