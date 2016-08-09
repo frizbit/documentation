@@ -58,8 +58,70 @@ Both keys will be asked while you are creating your website by using [Frizbit Da
 The Apple Push Notification Service (APNs) is a service created by Apple Inc. way back in 2009 to securely send push notifications from third party apps to their users' Apple devices. To be able to ensure that unwanted parties are not sending notifications to your application or website, Apple requires you to create an SSL certificate to allow secure connection to their servers. Please follow steps below to create the certificate for web push notifications.
 
 1. **Create Certificate Signing request**
-2. **Create a Web Push ID**
-3. **Create a Web Push Certificate**
+
+Open _Keychain Access_ on your Mac OS X. It may be located in “Applications” > “Utilites” > “Keychain Access”
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-1.png "Keychain Access")
+
+Select “Keychain Access” > “Certificate Assistant” > ”Request a Certificate From a Certificate Authority…” from the top menu.
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-2.png "Keychain Access2")
+
+Select the “Save to disk” option and enter your information in the required fields. This creates a certification request file that will be used later.
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-3.png "Keychain Access3")
+
+2. **Create a Website Push ID**
+
+Visit the [Apple Developer Account.](https://developer.apple.com/account)
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-4.png "Apple Developer Account")
+
+Select “Certificates, Identifiers & Profiles” and then “Website Push IDs” from the left menu. Click “+” icon on upper right corner to create a new Website Push ID.
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-5.png "Apple Developer Account-2")
+
+Enter a name and a unique identifier for your website push ID as shown in the example above. As recommended by Apple, use a reverse-domain name style string (i.e., com.domainname.appname) for a unique identifier. Click “Register” and “Done” to complete registration.
+
+Please note the identifier as we will ask while you are creating a website by using [Frizbit Dashboard.](https://dashboard.frizbit.com) 
+
+3. **Create a Website Push ID Certificate**
+
+While you are on “Certificates, Identifiers & Profiles”, select “Certificates” > “All” from the left menu. Click “+” icon on upper right corner to create a new Website Push ID Certificate.
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-6.png "Apple Developer Account-3")
+
+Select “Website Push ID Certificate” checkbox under the “Production” section as we need a production certificate and click “Continue”.
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-7.png "Apple Developer Account-4")
+
+Select previously created Website Push ID from the dropdown and click “Continue”.
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-8.png "Apple Developer Account-5")
+
+In this step, Apple summarizes how to create a Certificate Signing request file. As we have already created a CSR file, click “Continue” to upload it for generating your certificate. 
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-9.png "Apple Developer Account-6")
+
+Upload previously created Certificate Signing request file and generate your certificate.
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-10.png "Apple Developer Account-7")
+
+Press “Download” to save your certificate.
+
+4. **Create a Private Key for Frizbit Dashboard**
+
+Open the .cer file you downloaded in the last step by double clicking on it in Finder.
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-10.png "Apple Certificate-1")
+
+After a few seconds the “Keychain Access” program should pop up. Select “Login” > “Keys” then right click on your key(**Private Key**) in the list and select “Export”. 
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-11.png "Apple Certificate-2")
+
+Give the file a unique name and press save. You will have an option to protect the file with a password. Add a password, you need to enter this same password on Frizbit Dashboard. Save the .p12 file and its password for later use.
+
+Website Push ID, Website Push ID Certificate Private Key and its protection password will be asked while you are creating your website by using [Frizbit Dashboard.](https://dashboard.frizbit.com) 
 
 # Installation
 ## Fully https websites
