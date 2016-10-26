@@ -32,7 +32,7 @@ Google Chrome Browser uses Google’s Cloud Messaging Service for sending push n
 
 1. **Create a Google Application**
 
-Visit the [Google Services Wizard.](https://developers.google.com/mobile/add?platform=android&cntapi=gcm) Don’t worry about creating an “Android” application. There are no differences between sending web push notifications between Android or Google Chrome. They are using same service called Google Cloud Messaging which we will activate soon.
+Visit the <a href="https://developers.google.com/mobile/add?platform=android&cntapi=gcm" target="_blank">Google Services Wizard.</a> Don’t worry about creating an “Android” application. There are no differences between sending web push notifications between Android or Google Chrome. They are using same service called Google Cloud Messaging which we will activate soon.
 
 ![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/google-1.png "Creating a Google Application Step 1")
 
@@ -83,7 +83,7 @@ Select “Certificates, Identifiers & Profiles” and then “Website Push IDs�
 
 Enter a name and a unique identifier for your website push ID as shown in the example above. As recommended by Apple, use a reverse-domain name style string (i.e., com.domainname.appname) for a unique identifier. Click “Register” and “Done” to complete registration.
 
-Please note the identifier as we will ask while you are creating a website by using [Frizbit Dashboard.](https://dashboard.frizbit.com) 
+Please note the identifier as we will ask while you are creating a website by using <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard.</a>
 
 3. **Create a Website Push ID Certificate**
 
@@ -121,7 +121,7 @@ After a few seconds the “Keychain Access” program should pop up. Select “L
 
 Give the file a unique name and press save. You will have an option to protect the file with a password. Add a password, you need to enter this same password on Frizbit Dashboard. Save the .p12 file and its password for later use.
 
-Website Push ID, Website Push ID Certificate Private Key and its protection password will be asked while you are creating your website by using [Frizbit Dashboard.](https://dashboard.frizbit.com) 
+Website Push ID, Website Push ID Certificate Private Key and its protection password will be asked while you are creating your website by using <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard.</a>
 
 # Installation
 ## Fully https websites
@@ -152,20 +152,20 @@ Website Push ID, Website Push ID Certificate Private Key and its protection pass
 # Getting Started
 ## Introduction
 
-So you have decided to give [Frizbit](https://frizbit.com "push notification for your web applications") a try, but you are not sure where to begin. Have no fear, this step-by-step guide will help you how to get started and send push notifications to reach your users.
+So you have decided to give [Frizbit](https://frizbit.com "push notification for your web applications" target="_blank") a try, but you are not sure where to begin. Have no fear, this step-by-step guide will help you how to get started and send push notifications to reach your users.
 
 ## What is Frizbit?
 Frizbit is a simple and reliable push notification platform built for websites. 
 
 ## Starting with Frizbit
-Make sure you have [signed up](https://frizbit.com "push notification for your web applications") for an account before continuing, since you will need a key to authenticate to the frizbit services.
+Make sure you have [signed up](https://frizbit.com "push notification for your web applications" target="_blank") for an account before continuing, since you will need a key to authenticate to the frizbit services.
 
 ## Basic Installation
 The following installation steps will get Frizbit working on your website. 
 
 1. Go to the Frizbit dashboard, and open Website Settings->Frizbit javascript. Copy the script shown there as below, which will include your API Key.
 
-    <script src='//cdn.frizbit.com/frizbitjs/[YOUR FRIZBIT APP KEY].js' async></script>
+    <script src='//cdn.frizbit.com/frizbitjs/[YOUR FRIZBIT APP KEY].js'></script>
   
 2. Using your website's dashboard paste this code just above the closing **</head>** tag.
 
