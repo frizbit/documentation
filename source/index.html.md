@@ -24,7 +24,7 @@ search: true
 Web push notifications are very similar to the push notifications sent by mobile apps on smartphones, in the sense that users can receive notifications whenever the websites send notifications. But there is one big difference is that you don’t need to have a mobile application to be able to send notifications to your users. 
 
 ## What can we do with web push notifications?
-Web push notification is the new marketing channel, which outperforms any traditional marketing channels such as E-mail SMS or Retargeting in terms of Click-through rates(CTR). Web push notification is not a new customer acquisition channel, it is a new channel which helps you to re-engage with your existing visitors in the most effective way. 
+Web push notification is the new marketing channel, which outperforms any traditional marketing channels such as E-mail, SMS or Retargeting in terms of Click-through rates(CTR). Web push notification is not a new customer acquisition channel, it is a new channel which helps you to re-engage with your existing visitors in the most effective way. 
 
 In order to be able to send notifications, you have to get the permission from the user. After the user opts-in to get the notifications, websites can send as much push notifications as possible to the user. But it should be taken into the consideration that too many irrelevant notifications would make the user to opt-out. 
 
@@ -43,10 +43,38 @@ On iOS devices, web push notifications are not supported at the moment. We expec
 
 # Getting Started
 ## Creating your account
+So you have decided to give <a href="https://frizbit.com" target="_blank">Frizbit</a> a try, but you are not sure where to begin. Have no fear, this step-by-step guide will help you how to get started and send push notifications in order to reach your users.
+
+Make sure you have <a href="https://frizbit.com" target="_blank">signed up</a> for an account before continuing, since you will need a key to authenticate to the Frizbit services.
+
 ## Adding your website
-### Fully https websites
-### Partly https websites
-### Http only websites
+Adding new website to <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard</a> doesn’t take more than one minute. Frizbit offers three different installation options to support all kind of websites. To be able to decide which option suits to your website, please refer informations below.
+
+### Fully HTTPS websites
+All browsers except Apple Safari require _Fully_ HTTPS enabled website in order to start collecting web push notification subscribers. This is the default&native option for web push notification feature. If all of your pages are served under HTTPS, we recommend you to select this option.
+
+### Partly HTTPS websites
+Some of the websites serve their homepages under HTTP even though they have some pages served under HTTPS. In this case, if you can change your configurations to serve your all web pages under HTTPS, we recommend you to do that before adding your website to <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard</a>. If you can not change your configuration easily, we offer Partly HTTPS support in order to enable web push notification support.
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/partly-https-1.png “Adding partly HTTPS website”)
+
+By selecting _Only some pages are served HTTPS_, you can enter a directory name that will host our installation files under HTTPS. 
+
+The difference between _Fully_ HTTPS and _Partly_ HTTPS support is that, we will prompt a popup serving under HTTPS in order to ask native permission as shown below.
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/partly-https-2.png “Permission popup for Partly HTTPS website”)
+ 
+### HTTP only websites
+If you don’t have SSL certificate and all of your web pages are served under HTTP, this is the valid option for you. 
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/http-1.png “Adding HTTP only website”)
+
+By selecting _We don’t have HTTPS support_, you can enter a subdomain name that will host our installation files under HTTPS. 
+
+The difference between _Partly_ HTTPS and _HTTP only_ support is that, we will prompt a popup serving under Frizbit HTTPS subdomain in order to ask native permission as shown below.
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/http-2.png “Permission popup for HTTP only website”)
+
 ## Creating Google Project for Chrome
 Google Chrome Browser uses Google’s Cloud Messaging Service for sending push notifications. To be able to send and receive notifications via Google Chrome, we need to obtain a Google Server API Key and Google Project Number. 
 
