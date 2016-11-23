@@ -124,22 +124,29 @@
 
 <h2 id="what-are-web-push-notifications">What are web push notifications?</h2>
 
-<p><em>Web push notification</em> or in other words <em>browser push notification</em> is a brand new communication channel between websites and visitors. Web push notifications have been first initiated by Apple on Safari Browser for Mac OS X users in 2013, but it became much more scalable after Google Chrome launched its support for web push notifications. 
-Web push notifications are very similar to the push notifications sent by mobile apps on smartphones, in the sense that users can receive notifications whenever the websites send notifications. But there is one big difference is that you don’t need to have a mobile application to be able to send notifications to your users. </p>
+<p><em>Web push notification</em> or in other words <em>browser push notification</em> is a brand new communication channel between websites and visitors. Web push notifications have been first initiated by Apple on Safari Browser for Mac OS X users in 2013, but it became much more scalable after Google Chrome launched its support for web push notifications.</p>
+
+<p>Web push notifications are very similar to the push notifications sent by mobile apps on smartphones, in the sense that users can receive notifications whenever the websites send notifications. But there is one big difference is that you don’t need to have a mobile application to be able to send notifications to your users. </p>
 
 <h2 id="what-can-we-do-with-web-push-notifications">What can we do with web push notifications?</h2>
 
-<p>Web push notification is the new marketing channel, which outperforms any traditional marketing channels such as E-mail SMS or Retargeting in terms of Click-through rates(CTR). Web push notification is not a new customer acquisition channel, it is a new channel which helps you to re-engage with your existing visitors in the most effective way. 
-In order to be able to send notifications, you have to get the permission from the user. After the user opts-in to get the notifications, websites can send as much push notifications as possible to the user. But it should be taken into the consideration that too many irrelevant notifications would make the user to opt-out. 
-The most powerful feature of browser push notifications is that the user doesn’t have to be on your website in order to receive your notification. You can grab attention of your user on whichever page they are browsing! 
-If the browser is not working or their device is not turned on, you can still send the notification and your users will receive it whenever they turn their browsers on.
-A push notification consists of a title, a description, an icon and a URL that shows where the user will land upon clicking on the notification. You can also add action buttons such as calling a phone number, sending an e-mail, or directing users to different pages, in addition to directing users on a single URL. </p>
+<p>Web push notification is the new marketing channel, which outperforms any traditional marketing channels such as E-mail SMS or Retargeting in terms of Click-through rates(CTR). Web push notification is not a new customer acquisition channel, it is a new channel which helps you to re-engage with your existing visitors in the most effective way. </p>
+
+<p>In order to be able to send notifications, you have to get the permission from the user. After the user opts-in to get the notifications, websites can send as much push notifications as possible to the user. But it should be taken into the consideration that too many irrelevant notifications would make the user to opt-out. </p>
+
+<p>The most powerful feature of browser push notifications is that the user doesn’t have to be on your website in order to receive your notification. You can grab attention of your user on whichever page they are browsing!</p>
+
+<p>If the browser is not working or their device is not turned on, you can still send the notification and your users will receive it whenever they turn their browsers on.</p>
+
+<p>A push notification consists of a title, a description, an icon and a URL that shows where the user will land upon clicking on the notification. You can also add action buttons such as calling a phone number, sending an e-mail, or directing users to different pages, in addition to directing users on a single URL. </p>
 
 <h2 id="which-browsers-are-supported">Which browsers are supported?</h2>
 
-<p>At the moment, Google Chrome(42+), Mozilla Firefox(46+), Safari(7.1+) and Yandex Browser are supported on desktop devices. 
-On Android devices, Google Chrome, Mozilla Firefox are the browsers which has support for web push notifications. It is at beta phase on Opera Browser, which will be available for public versions soon.
-On iOS devices, web push notifications are not supported at the moment. We expect it to be released in the upcoming versions.</p>
+<p>At the moment, Google Chrome(42+), Mozilla Firefox(46+), Safari(7.1+) and Yandex Browser are supported on desktop devices. </p>
+
+<p>On Android devices, Google Chrome, Mozilla Firefox are the browsers which has support for web push notifications. It is at beta phase on Opera Browser, which will be available for public versions soon.</p>
+
+<p>On iOS devices, web push notifications are not supported at the moment. We expect it to be released in the upcoming versions.</p>
 
 <h1 id="getting-started">Getting Started</h1>
 
@@ -153,47 +160,55 @@ On iOS devices, web push notifications are not supported at the moment. We expec
 
 <h3 id="http-only-websites">Http only websites</h3>
 
-<h2 id="creating-google-project-for-chrome">Creating Google project for Chrome</h2>
+<h2 id="creating-google-project-for-chrome">Creating Google Project for Chrome</h2>
 
-<p>Google Chrome Browser uses Google’s Cloud Messaging Service for sending push notifications. To be able to send and receive notifications to Chrome, we’ll obtain a Google Server API Key and Google Project Number. Frizbit Dashboard provides default values for your website. But if you would like to provide your own keys, please follow the instructions to obtain them.</p>
+<p>Google Chrome Browser uses Google’s Cloud Messaging Service for sending push notifications. To be able to send and receive notifications via Google Chrome, we need to obtain a Google Server API Key and Google Project Number. </p>
 
-<ol>
-<li><strong>Create a Google Application</strong></li>
-</ol>
+<p>If you would like not to create your own Google Server API Key and Google Project Number for your website, <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard</a> can use its default key. However, in this case you wouldn’t be able to access the extra stats of your project on the Google Services interface.</p>
 
-<p>Visit the <a href="https://developers.google.com/mobile/add?platform=android&cntapi=gcm" target="_blank">Google Services Wizard.</a> Don’t worry about creating an “Android” application. There are no differences between sending web push notifications between Android or Google Chrome. They are using same service called Google Cloud Messaging which we will activate soon.</p>
+<p>If you would like to create your own Google Server API Key and Google Project Number, please follow the instructions below.</p>
+
+<p>1. <strong>Visit the Google Services Wizard</strong></p>
+
+<p>If you are not logged in to any Google account, please log in to your Google Account first. Visit the <a href="https://developers.google.com/mobile/add?platform=android&cntapi=gcm" target="_blank">Google Services Wizard.</a> </p>
+
+<p>On the page after logging in, on the left menu you will see that <em>Android</em> is selected by default. Don’t worry about creating an <em>Android</em> application. There are no differences between sending web push notifications between Android or Google Chrome. They are using same service called Google Cloud Messaging which we will activate soon.</p>
 
 <p><img title="Creating a Google Application Step 1" src="https://raw.githubusercontent.com/frizbit/documentation/master/source/images/google-1.png" /></p>
 
-<p>You can create a new application or select an existing application from the dropdown. In the example above, we create a new application called <em>Frizbit</em>. As we are not sending push notifications to an Android application, we don’t need a package name. However, we must enter a value to continue. Please use a value that suits for your website. You can use reverse domain naming as we use in the example above.</p>
+<p>2. <strong>Type any name to as your <em>App Name</em></strong></p>
 
-<p>Click <strong>Choose and configure services</strong> to continue. Wait a minute for the project to be created.</p>
+<p>As an example, we type <em>Frizbit</em> in the screenshot above. You can type whatever name you prefer. As a suggestion, you can type <em>domain name</em> and the word <em>push</em> to identify the app clearly.</p>
 
-<ol>
-<li><strong>Activate Google Cloud Messaging</strong></li>
-</ol>
+<p>Alternatively, you can select an existing application from the dropdown, if you have any applications created previously.</p>
+
+<p>3. <strong>Type any name as your <em>Android Package Name</em></strong></p>
+
+<p>As we are not sending push notifications to an Android application, we don’t need a package name. However, we must enter a value to continue. Please use a value that suits for your website. As a suggestion, you can type reverse domain naming as we use in the example above.</p>
+
+<p>4. <strong>Click <em>Choose and Configure Services</em> button to continue</strong></p>
+
+<p>Wait a few seconds for the project to be created.</p>
+
+<p>5. <strong>Click <em>Enable Google Cloud Messaging</em> button</strong></p>
 
 <p>After your project created, select <strong>Cloud Messaging</strong> to enable. Click <strong>Enable Google Cloud Messaging.</strong></p>
 
 <p><img title="Activating Google Cloud Messaging" src="https://raw.githubusercontent.com/frizbit/documentation/master/source/images/google-2.png" /></p>
 
-<ol>
-<li><strong>Save Your Keys</strong></li>
-</ol>
+<p>6. <strong>Save Your Keys</strong></p>
 
 <p>Google Services Wizard will enable Google Cloud Messaging and return two keys called <em>Server API Key</em> and <em>Sender ID</em>(also known as the <em>Project Number</em>).</p>
 
 <p><img title="Activating Google Cloud Messaging" src="https://raw.githubusercontent.com/frizbit/documentation/master/source/images/google-3.png" /></p>
 
-<p>Both keys will be asked while you are creating your website by using <a href="https://dashboard.frizbit.com">Frizbit Dashboard.</a> </p>
+<p>Both keys will be asked while you are adding your website to the <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard</a> in order to start your service.</p>
 
-<h2 id="creating-certificate-for-safari">Creating certificate for Safari</h2>
+<h2 id="creating-certificate-for-safari">Creating Certificate for Safari</h2>
 
-<p>The Apple Push Notification Service (APNs) is a service created by Apple Inc. way back in 2009 to securely send push notifications from third party apps to their users&rsquo; Apple devices. To be able to ensure that unwanted parties are not sending notifications to your application or website, Apple requires you to create an SSL certificate to allow secure connection to their servers. Please follow steps below to create the certificate for web push notifications.</p>
+<p>The Apple Push Notification Service (APNs) is a service created by Apple, Inc. way back in 2009 to securely send push notifications from third party apps to the Apple devices of their users. In order to ensure that unwanted parties are not sending notifications to your application or website, Apple requires you to create an SSL certificate in order to allow secure connection to their servers. Please follow steps below to create the certificate for web push notifications.</p>
 
-<ol>
-<li><strong>Create Certificate Signing request</strong></li>
-</ol>
+<p>1. <strong>Create Certificate Signing Request</strong></p>
 
 <p>Open <em>Keychain Access</em> on your Mac OS X. It may be located in “Applications” &gt; “Utilites” &gt; “Keychain Access”</p>
 
@@ -207,9 +222,7 @@ On iOS devices, web push notifications are not supported at the moment. We expec
 
 <p><img title="Keychain Access3" src="https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-3.png" /></p>
 
-<ol>
-<li><strong>Create a Website Push ID</strong></li>
-</ol>
+<p>2. <strong>Create a Website Push ID</strong></p>
 
 <p>Visit the <a href="https://developer.apple.com/account">Apple Developer Account.</a></p>
 
@@ -223,9 +236,7 @@ On iOS devices, web push notifications are not supported at the moment. We expec
 
 <p>Please note the identifier as we will ask while you are creating a website by using <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard.</a></p>
 
-<ol>
-<li><strong>Create a Website Push ID Certificate</strong></li>
-</ol>
+<p>3. <strong>Create a Website Push ID Certificate</strong></p>
 
 <p>While you are on “Certificates, Identifiers &amp; Profiles”, select “Certificates” &gt; “All” from the left menu. Click “+” icon on upper right corner to create a new Website Push ID Certificate.</p>
 
@@ -249,9 +260,7 @@ On iOS devices, web push notifications are not supported at the moment. We expec
 
 <p>Press “Download” to save your certificate.</p>
 
-<ol>
-<li><strong>Create a Private Key for Frizbit Dashboard</strong></li>
-</ol>
+<p>4. <strong>Create a Private Key for Frizbit Dashboard</strong></p>
 
 <p>Open the .cer file you downloaded in the last step by double clicking on it in Finder.</p>
 
@@ -261,7 +270,7 @@ On iOS devices, web push notifications are not supported at the moment. We expec
 
 <p><img title="Apple Certificate-2" src="https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-12.png" /></p>
 
-<p>Give the file a unique name and press save. You will have an option to protect the file with a password. Add a password, you need to enter this same password on Frizbit Dashboard. Save the .p12 file and its password for later use.</p>
+<p>Give the file a unique name and press save. You will have an option to protect the file with a password. Add a password, you need to enter this same password on <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard.</a> Save the .p12 file and its password for later use.</p>
 
 <p>Website Push ID, Website Push ID Certificate Private Key and its protection password will be asked while you are creating your website by using <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard.</a></p>
 
