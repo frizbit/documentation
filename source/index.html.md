@@ -18,9 +18,22 @@ search: true
 ---
 
 # Introduction
-## What’s web push notifications?
+## What are web push notifications?
+*Web push notification* or in other words *browser push notification* is a brand new communication channel between websites and visitors. Web push notifications have been first initiated by Apple on Safari Browser for Mac OS X users in 2013, but it became much more scalable after Google Chrome launched its support for web push notifications. 
+Web push notifications are very similar to the push notifications sent by mobile apps on smartphones, in the sense that users can receive notifications whenever the websites send notifications. But there is one big difference is that you don’t need to have a mobile application to be able to send notifications to your users. 
+
 ## What can we do with web push notifications?
+Web push notification is the new marketing channel, which outperforms any traditional marketing channels such as E-mail SMS or Retargeting in terms of Click-through rates(CTR). Web push notification is not a new customer acquisition channel, it is a new channel which helps you to re-engage with your existing visitors in the most effective way. 
+In order to be able to send notifications, you have to get the permission from the user. After the user opts-in to get the notifications, websites can send as much push notifications as possible to the user. But it should be taken into the consideration that too many irrelevant notifications would make the user to opt-out. 
+The most powerful feature of browser push notifications is that the user doesn’t have to be on your website in order to receive your notification. You can grab attention of your user on whichever page they are browsing! 
+If the browser is not working or their device is not turned on, you can still send the notification and your users will receive it whenever they turn their browsers on.
+A push notification consists of a title, a description, an icon and a URL that shows where the user will land upon clicking on the notification. You can also add action buttons such as calling a phone number, sending an e-mail, or directing users to different pages, in addition to directing users on a single URL. 
+
 ## Which browsers are supported?
+At the moment, Google Chrome(42+), Mozilla Firefox(46+), Safari(7.1+) and Yandex Browser are supported on desktop devices. 
+On Android devices, Google Chrome, Mozilla Firefox are the browsers which has support for web push notifications. It is at beta phase on Opera Browser, which will be available for public versions soon.
+On iOS devices, web push notifications are not supported at the moment. We expect it to be released in the upcoming versions.
+
 # Getting Started
 ## Creating your account
 ## Adding your website
