@@ -316,23 +316,52 @@
 &lt;script type=&quot;text/javascript&quot;&gt; var frizbit = frizbit || []; frizbit.push([&quot;init&quot;, {[YOUR FRIZBIT CONFIGURATIONS]}]); &lt;/script&gt;
 </code></p></li>
 <li><p>On your website, insert this code just above the closing <code class="prettyprint">&lt;/head&gt;</code> tag.</p></li>
-<li><p>Download installation files and copy the files to the top-level directory (root, or &rsquo;/&rsquo;) of your server. Installation files should be reachable as below</p>
+<li><p>Download installation files and copy the files to the top-level directory (root, or &rsquo;/&rsquo;) of your server. Installation files should be reachable as shown below:</p>
 
-<ol>
+<ul>
 <li>https://yourwebsite.com/manifest.json</li>
 <li>https://yourwebsite.com/FrizbitServiceWorker.js</li>
-<li>https://yourwensite.com/FrizbitUpdateWorker.js</li>
-</ol></li>
+<li>https://yourwebsite.com/FrizbitUpdateWorker.js</li>
+</ul></li>
 <li><p>Navigate to your website and be the first subscriber!</p></li>
 </ol>
 
-<h2 id="partly-https-websites">Partly https websites</h2>
+<h2 id="partly-https-websites">Partly HTTPS websites</h2>
 
-<h3 id="for-your-own-https-subdomain">For your own https subdomain</h3>
+<p>The following installation steps will get Frizbit working on your <em>Partly</em> HTTPS website. </p>
 
-<h3 id="for-provided-frizbit-https-subdomain">For provided frizbit https subdomain</h3>
+<ol>
+<li><p>Go to the <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard</a>, and open Website Settings-&gt;Frizbit javascript. Copy all the codes shown there as below, which will include your API Key.
+<code class="prettyprint">
+&lt;script src=&#39;//cdn.frizbit.com/frizbitjs/[YOUR FRIZBIT APP KEY].js&#39;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt; var frizbit = frizbit || []; frizbit.push([&quot;init&quot;, {[YOUR FRIZBIT CONFIGURATIONS]}]); &lt;/script&gt;
+</code></p></li>
+<li><p>On your website, insert this code just above the closing <code class="prettyprint">&lt;/body&gt;</code> tag.</p></li>
+<li><p>Download installation files and copy the files to the subfolder directory of your server that you have entered while adding your website to <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard.</a> Installation files should be reachable as shown below:</p>
 
-<h2 id="http-only-website">Http only website</h2>
+<ul>
+<li>https://yourwebsite.com/[Subfolder]/manifest.json</li>
+<li>https://yourwebsite.com/[Subfolder]/FrizbitServiceWorker.js</li>
+<li>https://yourwebsite.com/[Subfolder]/FrizbitUpdateWorker.js</li>
+<li>https://yourwebsite.com/[Subfolder]/index.html</li>
+<li>https://yourwebsite.com/[Subfolder]/iframe.html</li>
+</ul></li>
+<li><p>Navigate to your website and be the first subscriber!</p></li>
+</ol>
+
+<h2 id="http-only-website">HTTP only website</h2>
+
+<p>The following installation steps will get Frizbit working on your HTTP only website. </p>
+
+<ol>
+<li><p>Go to the <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard</a>, and open Website Settings-&gt;Frizbit javascript. Copy all the codes shown there as below, which will include your API Key.
+<code class="prettyprint">
+&lt;script src=&#39;//cdn.frizbit.com/frizbitjs/[YOUR FRIZBIT APP KEY].js&#39;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt; var frizbit = frizbit || []; frizbit.push([&quot;init&quot;, {[YOUR FRIZBIT CONFIGURATIONS]}]); &lt;/script&gt;
+</code></p></li>
+<li><p>On your website, insert this code just above the closing <code class="prettyprint">&lt;/body&gt;</code> tag.</p></li>
+<li><p>Navigate to your website and be the first subscriber!</p></li>
+</ol>
 
 <h2 id="how-to-install-by-using-google-tag-manager">How to install by using Google Tag Manager</h2>
 
