@@ -188,7 +188,26 @@ Give the file a unique name and press save. You will have an option to protect t
 Website Push ID, Website Push ID Certificate Private Key and its protection password will be asked while you are creating your website by using <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard.</a>
 
 # Installation
-## Fully https websites
+
+## Fully HTTPS websites
+The following installation steps will get Frizbit working on your _Fully_ HTTPS website. 
+
+1. Go to the <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard</a>, and open Website Settings->Frizbit javascript. Copy all the codes shown there as below, which will include your API Key.
+```
+<link rel="manifest" href="manifest.json"> 
+<script src='//cdn.frizbit.com/frizbitjs/[YOUR FRIZBIT APP KEY].js'></script>
+<script type="text/javascript"> var frizbit = frizbit || []; frizbit.push(["init", {[YOUR FRIZBIT CONFIGURATIONS]}]); </script>
+```
+  
+2. On your website, insert this code just above the closing `</head>` tag.
+
+3. Download installation files and copy the files to the top-level directory (root, or '/') of your server. Installation files should be reachable as below
+	4. https://yourwebsite.com/manifest.json
+	5. https://yourwebsite.com/FrizbitServiceWorker.js
+	6. https://yourwensite.com/FrizbitUpdateWorker.js
+
+4. Navigate to your website and be the first subscriber!
+
 ## Partly https websites
 ### For your own https subdomain
 ### For provided frizbit https subdomain
