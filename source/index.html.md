@@ -47,37 +47,53 @@ On iOS devices, web push notifications are not supported at the moment. We expec
 ### Fully https websites
 ### Partly https websites
 ### Http only websites
-## Creating Google project for Chrome
-Google Chrome Browser uses Google’s Cloud Messaging Service for sending push notifications. To be able to send and receive notifications to Chrome, we’ll obtain a Google Server API Key and Google Project Number. Frizbit Dashboard provides default values for your website. But if you would like to provide your own keys, please follow the instructions to obtain them.
+## Creating Google Project for Chrome
+Google Chrome Browser uses Google’s Cloud Messaging Service for sending push notifications. To be able to send and receive notifications via Google Chrome, we need to obtain a Google Server API Key and Google Project Number. 
 
-1. **Create a Google Application**
+If you would like not to create your own Google Server API Key and Google Project Number for your website, <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard</a> can use its default key. However, in this case you wouldn’t be able to access the extra stats of your project on the Google Services interface.
 
-Visit the <a href="https://developers.google.com/mobile/add?platform=android&cntapi=gcm" target="_blank">Google Services Wizard.</a> Don’t worry about creating an “Android” application. There are no differences between sending web push notifications between Android or Google Chrome. They are using same service called Google Cloud Messaging which we will activate soon.
+If you would like to create your own Google Server API Key and Google Project Number, please follow the instructions below.
+
+1\. **Visit the Google Services Wizard**
+
+If you are not logged in to any Google account, please log in to your Google Account first. Visit the <a href="https://developers.google.com/mobile/add?platform=android&cntapi=gcm" target="_blank">Google Services Wizard.</a> 
+
+On the page after logging in, on the left menu you will see that _Android_ is selected by default. Don’t worry about creating an _Android_ application. There are no differences between sending web push notifications between Android or Google Chrome. They are using same service called Google Cloud Messaging which we will activate soon.
 
 ![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/google-1.png "Creating a Google Application Step 1")
 
-You can create a new application or select an existing application from the dropdown. In the example above, we create a new application called _Frizbit_. As we are not sending push notifications to an Android application, we don’t need a package name. However, we must enter a value to continue. Please use a value that suits for your website. You can use reverse domain naming as we use in the example above.
+2\. **Type any name to as your _App Name_**
 
-Click **Choose and configure services** to continue. Wait a minute for the project to be created.
+As an example, we type _Frizbit_ in the screenshot above. You can type whatever name you prefer. As a suggestion, you can type _domain name_ and the word _push_ to identify the app clearly.
 
-2. **Activate Google Cloud Messaging**
+Alternatively, you can select an existing application from the dropdown, if you have any applications created previously.
+
+3\. **Type any name as your _Android Package Name_**
+
+As we are not sending push notifications to an Android application, we don’t need a package name. However, we must enter a value to continue. Please use a value that suits for your website. As a suggestion, you can type reverse domain naming as we use in the example above.
+
+4\. **Click _Choose and Configure Services_ button to continue**
+
+Wait a few seconds for the project to be created.
+
+5\. **Click _Enable Google Cloud Messaging_ button**
 
 After your project created, select **Cloud Messaging** to enable. Click **Enable Google Cloud Messaging.**
 
 ![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/google-2.png "Activating Google Cloud Messaging")
 
-3. **Save Your Keys**
+6\. **Save Your Keys**
 
 Google Services Wizard will enable Google Cloud Messaging and return two keys called _Server API Key_ and _Sender ID_(also known as the _Project Number_).
 
 ![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/google-3.png "Activating Google Cloud Messaging")
 
-Both keys will be asked while you are creating your website by using [Frizbit Dashboard.](https://dashboard.frizbit.com) 
+Both keys will be asked while you are adding your website to the <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard</a> in order to start your service.
 
-## Creating certificate for Safari
-The Apple Push Notification Service (APNs) is a service created by Apple Inc. way back in 2009 to securely send push notifications from third party apps to their users' Apple devices. To be able to ensure that unwanted parties are not sending notifications to your application or website, Apple requires you to create an SSL certificate to allow secure connection to their servers. Please follow steps below to create the certificate for web push notifications.
+## Creating Certificate for Safari
+The Apple Push Notification Service (APNs) is a service created by Apple, Inc. way back in 2009 to securely send push notifications from third party apps to the Apple devices of their users. In order to ensure that unwanted parties are not sending notifications to your application or website, Apple requires you to create an SSL certificate in order to allow secure connection to their servers. Please follow steps below to create the certificate for web push notifications.
 
-1. **Create Certificate Signing request**
+1\. **Create Certificate Signing Request**
 
 Open _Keychain Access_ on your Mac OS X. It may be located in “Applications” > “Utilites” > “Keychain Access”
 
@@ -91,7 +107,7 @@ Select the “Save to disk” option and enter your information in the required 
 
 ![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-3.png "Keychain Access3")
 
-2. **Create a Website Push ID**
+2\. **Create a Website Push ID**
 
 Visit the [Apple Developer Account.](https://developer.apple.com/account)
 
@@ -105,7 +121,7 @@ Enter a name and a unique identifier for your website push ID as shown in the ex
 
 Please note the identifier as we will ask while you are creating a website by using <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard.</a>
 
-3. **Create a Website Push ID Certificate**
+3\. **Create a Website Push ID Certificate**
 
 While you are on “Certificates, Identifiers & Profiles”, select “Certificates” > “All” from the left menu. Click “+” icon on upper right corner to create a new Website Push ID Certificate.
 
@@ -129,7 +145,7 @@ Upload previously created Certificate Signing request file and generate your cer
 
 Press “Download” to save your certificate.
 
-4. **Create a Private Key for Frizbit Dashboard**
+4\. **Create a Private Key for Frizbit Dashboard**
 
 Open the .cer file you downloaded in the last step by double clicking on it in Finder.
 
@@ -139,7 +155,7 @@ After a few seconds the “Keychain Access” program should pop up. Select “L
 
 ![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/apple-12.png "Apple Certificate-2")
 
-Give the file a unique name and press save. You will have an option to protect the file with a password. Add a password, you need to enter this same password on Frizbit Dashboard. Save the .p12 file and its password for later use.
+Give the file a unique name and press save. You will have an option to protect the file with a password. Add a password, you need to enter this same password on <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard.</a> Save the .p12 file and its password for later use.
 
 Website Push ID, Website Push ID Certificate Private Key and its protection password will be asked while you are creating your website by using <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard.</a>
 
