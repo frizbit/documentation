@@ -56,24 +56,24 @@ All browsers except Apple Safari require _Fully_ HTTPS enabled website in order 
 ### Partly HTTPS websites
 Some of the websites serve their homepages under HTTP even though they have some pages served under HTTPS. In this case, if you can change your configurations to serve your all web pages under HTTPS, we recommend you to do that before adding your website to <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard</a>. If you can not change your configuration easily, we offer Partly HTTPS support in order to enable web push notification support.
 
-![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/partly-https-1.png “Adding partly HTTPS website”)
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/partly-https-1.png "Adding partly HTTPS website")
 
 By selecting _Only some pages are served HTTPS_, you can enter a directory name that will host our installation files under HTTPS. 
 
 The difference between _Fully_ HTTPS and _Partly_ HTTPS support is that, we will prompt a popup serving under HTTPS in order to ask native permission as shown below.
 
-![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/partly-https-2.png “Permission popup for Partly HTTPS website”)
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/partly-https-2.png "Permission popup for Partly HTTPS website")
  
 ### HTTP only websites
 If you don’t have SSL certificate and all of your web pages are served under HTTP, this is the valid option for you. 
 
-![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/http-1.png “Adding HTTP only website”)
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/http-1.png "Adding HTTP only website")
 
 By selecting _We don’t have HTTPS support_, you can enter a subdomain name that will host our installation files under HTTPS. 
 
 The difference between _Partly_ HTTPS and _HTTP only_ support is that, we will prompt a popup serving under Frizbit HTTPS subdomain in order to ask native permission as shown below.
 
-![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/http-2.png “Permission popup for HTTP only website”)
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/http-2.png "Permission popup for HTTP only website")
 
 ## Creating Google Project for Chrome
 Google Chrome Browser uses Google’s Cloud Messaging Service for sending push notifications. To be able to send and receive notifications via Google Chrome, we need to obtain a Google Server API Key and Google Project Number. 
