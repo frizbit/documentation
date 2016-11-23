@@ -304,7 +304,27 @@
 
 <h1 id="installation">Installation</h1>
 
-<h2 id="fully-https-websites">Fully https websites</h2>
+<h2 id="fully-https-websites">Fully HTTPS websites</h2>
+
+<p>The following installation steps will get Frizbit working on your <em>Fully</em> HTTPS website. </p>
+
+<ol>
+<li><p>Go to the <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard</a>, and open Website Settings-&gt;Frizbit javascript. Copy all the codes shown there as below, which will include your API Key.
+<code class="prettyprint">
+&lt;link rel=&quot;manifest&quot; href=&quot;manifest.json&quot;&gt; 
+&lt;script src=&#39;//cdn.frizbit.com/frizbitjs/[YOUR FRIZBIT APP KEY].js&#39;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt; var frizbit = frizbit || []; frizbit.push([&quot;init&quot;, {[YOUR FRIZBIT CONFIGURATIONS]}]); &lt;/script&gt;
+</code></p></li>
+<li><p>On your website, insert this code just above the closing <code class="prettyprint">&lt;/head&gt;</code> tag.</p></li>
+<li><p>Download installation files and copy the files to the top-level directory (root, or &rsquo;/&rsquo;) of your server. Installation files should be reachable as below</p>
+
+<ol>
+<li>https://yourwebsite.com/manifest.json</li>
+<li>https://yourwebsite.com/FrizbitServiceWorker.js</li>
+<li>https://yourwensite.com/FrizbitUpdateWorker.js</li>
+</ol></li>
+<li><p>Navigate to your website and be the first subscriber!</p></li>
+</ol>
 
 <h2 id="partly-https-websites">Partly https websites</h2>
 
