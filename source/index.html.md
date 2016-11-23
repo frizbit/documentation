@@ -35,9 +35,9 @@ If the browser is not working or their device is not turned on, you can still se
 A push notification consists of a title, a description, an icon and a URL that shows where the user will land upon clicking on the notification. You can also add action buttons such as calling a phone number, sending an e-mail, or directing users to different pages, in addition to directing users on a single URL. 
 
 ## Which browsers are supported?
-At the moment, Google Chrome(42+), Mozilla Firefox(46+), Safari(7.1+) and Yandex Browser are supported on desktop devices. 
+At the moment, Google Chrome(42+), Mozilla Firefox(46+), Safari(7.1+) and Yandex Browser are supported on desktop devices. It is at beta phase on Opera Browser, which will be available for public versions soon.
 
-On Android devices, Google Chrome, Mozilla Firefox are the browsers which has support for web push notifications. It is at beta phase on Opera Browser, which will be available for public versions soon.
+On Android devices, Google Chrome, Mozilla Firefox, Opera Mobile are the browsers which has support for web push notifications. 
 
 On iOS devices, web push notifications are not supported at the moment. We expect it to be released in the upcoming versions.
 
