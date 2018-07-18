@@ -76,47 +76,63 @@ The difference between _Partly_ HTTPS and _HTTP only_ support is that, we will p
 ![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/http-2.png "Permission popup for HTTP only website")
 
 ## Creating Google Project for Chrome
-Google Chrome Browser uses Google’s Cloud Messaging Service for sending push notifications. To be able to send and receive notifications via Google Chrome, we need to obtain a Google Server API Key and Google Project Number. 
+Google Chrome Browser uses Google’s Cloud Messaging Service (which is now merged with Google Firebase) for sending web push notifications. To be able to send and receive notifications via Google Chrome, we need to create a project for our website on this platform and then obtain our Legacy Server Key and Sender ID for this push notifications project.
 
-If you would like not to create your own Google Server API Key and Google Project Number for your website, <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard</a> can use its default key. However, in this case you wouldn’t be able to access the extra stats of your project on the Google Services interface.
+While creating a new website on <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard,</a> 
 
-If you would like to create your own Google Server API Key and Google Project Number, please follow the instructions below.
+* If you have selected HTTPS setup to collect the subscribers on your own domain, this step is required for your website.
+* If you have not selected HTTPS setup, you don’t need to do this step as <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard</a> shall use its default Legacy Server Key and Sender ID in this case. However, in this case you wouldn’t be able to access the extra stats of your project on the Google Services interface.
 
-1\. **Visit the Google Services Wizard**
+To create your project on Google Cloud Messaging Service (Firebase) and get your Legacy Server Key and Google Sender ID, please follow the instructions below
 
-If you are not logged in to any Google account, please log in to your Google Account first. Visit the <a href="https://developers.google.com/mobile/add?platform=android&cntapi=gcm" target="_blank">Google Services Wizard.</a> 
+1\. **Visit Google Firebase (previously Google Services Wizard)**
 
-On the page after logging in, on the left menu you will see that _Android_ is selected by default. Don’t worry about creating an _Android_ application. There are no differences between sending web push notifications between Android or Google Chrome. They are using same service called Google Cloud Messaging which we will activate soon.
+Visit the <a href="https://firebase.google.com/?cntapi=gcm&platform=android" target="_blank">Google Firebase.</a> 
 
-![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/google-1.png "Creating a Google Application Step 1")
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-1.jpg "Creating a Firebase Application Step 1")
 
-2\. **Type any name to as your _App Name_**
+2\. **Start Adding Project on Google Firebase Console**
 
-As an example, we type _Frizbit_ in the screenshot above. You can type whatever name you prefer. As a suggestion, you can type _domain name_ and the word _push_ to identify the app clearly.
+After logging in, you’ll be redirected to the console of Google Firebase.
 
-Alternatively, you can select an existing application from the dropdown, if you have any applications created previously.
+* If you don’t have any previous projects associated with your Google account, you’ll be only shown the button of **Add Project**. Please click that **Add Project** button.
+* If you have existing projects for the same website, you can continue using the same project for Frizbit as well. If that is the case, select your previous web project.
+* If you have existing projects for iOS or Android, please ignore them and click on **Add Project** button.
 
-3\. **Type any name as your _Android Package Name_**
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-2.jpg "Creating a Firebase Application Step 2”)
 
-As we are not sending push notifications to an Android application, we don’t need a package name. However, we must enter a value to continue. Please use a value that suits for your website. As a suggestion, you can type reverse domain naming as we use in the example above.
+3\. **Define a Name to your _Project_**
 
-4\. **Click _Choose and Configure Services_ button to continue**
+As an example, we have typed _MySuperDomain_ in the screenshot below. You can type whatever name you prefer. As a suggestion, you can type domain name without any dots or extra characters.
+Then, make sure that you the tick boxes of the conditions are ticked.
 
-Wait a few seconds for the project to be created.
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-3.jpg "Creating a Firebase Application Step 3”)
 
-5\. **Click _Enable Google Cloud Messaging_ button**
+4\. **Continue to the Dashboard of the Project**
 
-After your project created, select **Cloud Messaging** to enable. Click **Enable Google Cloud Messaging.**
+After a couple of seconds, you’ll see that your new project is created and ready to use. Click on the **Continue** button to proceed.
 
-![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/google-2.png "Activating Google Cloud Messaging")
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-4.jpg "Creating a Firebase Application Step 4”)
 
-6\. **Save Your Keys**
+5\. **Go to Project Settings**
 
-Google Services Wizard will enable Google Cloud Messaging and return two keys called _Server API Key_ and _Sender ID_(also known as the _Project Number_).
+On the interface of the project, you’ll see a menu on the left. Click the settings icon on top of this menu. On the dropdown menu extended, click on **Project Settings** button.
 
-![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/google-3.png "Activating Google Cloud Messaging")
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-5.jpg "Creating a Firebase Application Step 5”)
 
-Both keys will be asked while you are adding your website to the <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard</a> in order to start your service.
+6\. **Click _Cloud Messaging_ tab**
+
+On the page opened, you’ll see many tabs. Click on **Cloud Messaging** button, which is the 2nd tab from the left.
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-6.jpg "Creating a Firebase Application Step 6”)
+
+7\. **Save _Legacy Server Key_ and _Sender ID_**
+
+We will see two keys already generated on Google Cloud Messaging, they are called Legacy Server Key (also know as _Server API Key_) and Sender ID (also known as the _Project Number_).
+
+Both keys will be asked while you are adding your website to the <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard</a>. We should copy and paste both of these keys in the corresponding fields on the **Configurations** step of adding the website to the Frizbit Dashboard.
+
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-7.jpg "Creating a Firebase Application Step 7”)
 
 ## Creating Certificate for Safari
 The Apple Push Notification Service (APNs) is a service created by Apple, Inc. way back in 2009 to securely send push notifications from third party apps to the Apple devices of their users. In order to ensure that unwanted parties are not sending notifications to your application or website, Apple requires you to create an SSL certificate in order to allow secure connection to their servers. Please follow steps below to create the certificate for web push notifications.
