@@ -88,6 +88,7 @@ To create your project on Google Cloud Messaging Service (Firebase) and get your
 1\. **Visit Google Firebase (previously Google Services Wizard)**
 
 Visit the <a href="https://firebase.google.com/?cntapi=gcm&platform=android" target="_blank">Google Firebase.</a> 
+If you are not logged in to any Google account, please log in to your Google Account first. On the page after logging in, click on the **Get Started** button.
 
 ![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-1.jpg "Creating a Firebase Application Step 1")
 
@@ -99,32 +100,32 @@ After logging in, you’ll be redirected to the console of Google Firebase.
 * If you have existing projects for the same website, you can continue using the same project for Frizbit as well. If that is the case, select your previous web project.
 * If you have existing projects for iOS or Android, please ignore them and click on **Add Project** button.
 
-![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-2.jpg "Creating a Firebase Application Step 2”)
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-2.jpg "Creating a Firebase Application Step 2")
 
 3\. **Define a Name to your _Project_**
 
 As an example, we have typed _MySuperDomain_ in the screenshot below. You can type whatever name you prefer. As a suggestion, you can type domain name without any dots or extra characters.
 Then, make sure that you the tick boxes of the conditions are ticked.
 
-![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-3.jpg "Creating a Firebase Application Step 3”)
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-3.jpg "Creating a Firebase Application Step 3")
 
 4\. **Continue to the Dashboard of the Project**
 
 After a couple of seconds, you’ll see that your new project is created and ready to use. Click on the **Continue** button to proceed.
 
-![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-4.jpg "Creating a Firebase Application Step 4”)
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-4.jpg "Creating a Firebase Application Step 4")
 
 5\. **Go to Project Settings**
 
 On the interface of the project, you’ll see a menu on the left. Click the settings icon on top of this menu. On the dropdown menu extended, click on **Project Settings** button.
 
-![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-5.jpg "Creating a Firebase Application Step 5”)
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-5.jpg "Creating a Firebase Application Step 5")
 
 6\. **Click _Cloud Messaging_ tab**
 
 On the page opened, you’ll see many tabs. Click on **Cloud Messaging** button, which is the 2nd tab from the left.
 
-![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-6.jpg "Creating a Firebase Application Step 6”)
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-6.jpg "Creating a Firebase Application Step 6")
 
 7\. **Save _Legacy Server Key_ and _Sender ID_**
 
@@ -132,7 +133,7 @@ We will see two keys already generated on Google Cloud Messaging, they are calle
 
 Both keys will be asked while you are adding your website to the <a href="https://dashboard.frizbit.com" target="_blank">Frizbit Dashboard</a>. We should copy and paste both of these keys in the corresponding fields on the **Configurations** step of adding the website to the Frizbit Dashboard.
 
-![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-7.jpg "Creating a Firebase Application Step 7”)
+![](https://raw.githubusercontent.com/frizbit/documentation/master/source/images/Firebase-7.jpg "Creating a Firebase Application Step 7")
 
 ## Creating Certificate for Safari
 The Apple Push Notification Service (APNs) is a service created by Apple, Inc. way back in 2009 to securely send push notifications from third party apps to the Apple devices of their users. In order to ensure that unwanted parties are not sending notifications to your application or website, Apple requires you to create an SSL certificate in order to allow secure connection to their servers. Please follow steps below to create the certificate for web push notifications.
